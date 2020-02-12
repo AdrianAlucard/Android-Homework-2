@@ -2,4 +2,8 @@
     <string name="app_name">HW2_PizzaOrder</string>
     <string name="pizza_order">Pizza Order</string>
     <string name="choose_text">Choose Your Pizza:</string>
+    <string name="pizza_size">Choose Pizza Size:</string>
+    <string name="medium">Med ($9.99)</string>
+    <string name="large">Large ($13.99)</string>
+    <string name="extra_large">X-Large ($15.99)</string>
 </resources>

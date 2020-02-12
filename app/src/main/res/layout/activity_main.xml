@@ -10,7 +10,7 @@
         android:id="@+id/pizza_order"
         android:layout_width="131dp"
         android:layout_height="31dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="16dp"
         android:text="@string/pizza_order"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -50,4 +50,49 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/choose_pizza"
         app:srcCompat="@drawable/bbq_chicken" />
+
+    <TextView
+        android:id="@+id/pizza_size_text"
+        android:layout_width="155dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/pizza_size"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.062"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_select" />
+
+    <RadioGroup
+        android:id="@+id/pizza_size"
+        android:layout_width="389dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.615"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pizza_size_text">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/medium" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/large" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/extra_large" />
+    </RadioGroup>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
