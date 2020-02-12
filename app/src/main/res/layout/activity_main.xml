@@ -78,6 +78,7 @@
             android:id="@+id/radioButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:checked="true"
             android:text="@string/medium" />
 
         <RadioButton
@@ -161,5 +162,30 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/onion_check" />
+
+    <Switch
+        android:id="@+id/delivery_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="@string/switch_text"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/delivery_header"
+        app:layout_constraintTop_toBottomOf="@+id/jalapeno_check" />
+
+    <TextView
+        android:id="@+id/delivery_header"
+        android:layout_width="143dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/delivery_text"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/delivery_switch"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cheese_check" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
