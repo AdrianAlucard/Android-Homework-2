@@ -6,4 +6,10 @@
     <string name="medium">Med ($9.99)</string>
     <string name="large">Large ($13.99)</string>
     <string name="extra_large">X-Large ($15.99)</string>
+    <string name="topping_header">Extra Toppings ($1.69 each)</string>
+    <string name="tomatoes">Tomatoes</string>
+    <string name="onions">Onions</string>
+    <string name="pineapples">Pineapples</string>
+    <string name="extra_cheese">Extra Cheese</string>
+    <string name="jalapeno">Jalapeno</string>
 </resources>
