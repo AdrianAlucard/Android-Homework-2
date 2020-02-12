@@ -75,24 +75,27 @@
         app:layout_constraintTop_toBottomOf="@+id/pizza_size_text">
 
         <RadioButton
-            android:id="@+id/radioButton"
+            android:id="@+id/medium"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:checked="true"
+            android:onClick="pizzaSizeClick"
             android:text="@string/medium" />
 
         <RadioButton
-            android:id="@+id/radioButton2"
+            android:id="@+id/large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="pizzaSizeClick"
             android:text="@string/large" />
 
         <RadioButton
-            android:id="@+id/radioButton3"
+            android:id="@+id/x-large"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:onClick="pizzaSizeClick"
             android:text="@string/extra_large" />
     </RadioGroup>
 
@@ -113,6 +116,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="extraToppingsClick"
         android:text="@string/onions"
         app:layout_constraintEnd_toStartOf="@+id/pineapple_check"
         app:layout_constraintHorizontal_bias="0.5"
@@ -124,6 +128,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="extraToppingsClick"
         android:text="@string/pineapples"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -135,6 +140,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
+        android:onClick="extraToppingsClick"
         android:text="@string/tomatoes"
         app:layout_constraintEnd_toStartOf="@+id/onion_check"
         app:layout_constraintHorizontal_bias="0.5"
@@ -146,6 +152,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="extraToppingsClick"
         android:text="@string/jalapeno"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -157,6 +164,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
+        android:onClick="extraToppingsClick"
         android:text="@string/extra_cheese"
         app:layout_constraintEnd_toStartOf="@+id/jalapeno_check"
         app:layout_constraintHorizontal_bias="0.5"
@@ -168,6 +176,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="28dp"
+        android:onClick="deliveryClick"
         android:text="@string/switch_text"
         android:textSize="18sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -187,5 +196,15 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/cheese_check" />
+
+    <TextView
+        android:id="@+id/total_text"
+        android:layout_width="187dp"
+        android:layout_height="55dp"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/delivery_header" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
