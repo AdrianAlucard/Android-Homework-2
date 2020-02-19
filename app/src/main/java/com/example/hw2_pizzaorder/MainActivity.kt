@@ -3,6 +3,7 @@ package com.example.hw2_pizzaorder
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ArrayAdapter
 import android.widget.CheckBox
 import android.widget.Switch
 import android.widget.Toast
@@ -14,12 +15,24 @@ class MainActivity : AppCompatActivity() {
     private var total: Double = 0.0
     private var extras: Double = 0.0
     private var pizzaCost: Double = 9.99
+    private val pizzaTypeList = ArrayList<String>()
+    lateinit var pizzaListAdapter: ArrayAdapter<String>
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
         setPizzaSelectListener()
+        addPizzaTypesAdapter()
         calcTotal()
+    }
+
+    private fun addPizzaTypesAdapter() {
+        pizzaTypeList.add("BBQ Chicken")
+        pizzaTypeList.add("Pepperoni")
+        pizzaTypeList.add("Hawaiian")
+        pizzaTypeList.add("Margherita")
+        pizzaListAdapter = ArrayAdapter(this, android.R.layout.simple_list_item_1, pizzaTypeList)
+        pizza_list.adapter = pizzaListAdapter
     }
 
     fun pizzaSizeClick(view: View) {
